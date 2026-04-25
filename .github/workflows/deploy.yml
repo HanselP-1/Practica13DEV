@@ -28,4 +28,4 @@ jobs:
           tags: ${{ secrets.DOCKER_USERNAME }}/hola-mundo-docker:latest
 
       - name: Deploy en Render
-        run: curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}HOOK }}
+        run: curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
